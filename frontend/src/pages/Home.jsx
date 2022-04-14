@@ -10,9 +10,6 @@ export default function Home() {
       <Counter />
 
       <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -28,7 +25,6 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Vite Docs
         </a>
       </p>
     </header>
