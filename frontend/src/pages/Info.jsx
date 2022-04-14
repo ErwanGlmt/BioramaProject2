@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Home() {
+function Info() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Info Page</h1>
     </div>
   );
 }
+
+export default Info;
