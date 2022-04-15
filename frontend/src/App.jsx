@@ -1,8 +1,9 @@
 import React from "react";
 // import axios from "axios";
-import Home from "./pages/Home";
+
 import Header from "./Header";
 import Content from "./Content";
+import Slider from "./components/Slider";
 
 import "./App.css";
 
@@ -15,9 +16,8 @@ function App() {
   getData(); */
   return (
     <div className="App">
-      <Home />
-      <p>c</p>
       <Header />
+      <Slider />
       <Content />
     </div>
   );

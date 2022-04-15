@@ -24,6 +24,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.2",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0"
   }
 }
