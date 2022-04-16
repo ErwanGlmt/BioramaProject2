@@ -1,0 +1,16 @@
+form{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+div.selectCat, div.selectDept {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select  {
+    width: 85vw;
+}
