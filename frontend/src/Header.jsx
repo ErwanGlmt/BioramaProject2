@@ -1,15 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import "./Header.css";
 
 function Header() {
+  const [showLinks, setShowLinks] = useState(false);
+
+  const handleShowLinks = () => {
+    setShowLinks(!showLinks);
+  };
   return (
     <header>
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/Search">Trouve des producteurs Bio Hot dans ta région</Link>
-        <Link to="/Info">Qui sommes-nous?</Link>
-        <Link to="/Contact">Nous contacter</Link>
+      <nav className={`navbar ${showLinks ? "show-nav" : null}`}>
+        <div className="navbar__logo">
+          <img className="logo" src="./src/assets/biorama2.png" alt="logo" />
+        </div>
+        <ul className="navbar__links">
+          <li className="navbar__item slideInDown-1">
+            <Link onClick={handleShowLinks} className="navbar__link" to="/">
+              Accueil
+            </Link>
+          </li>
+          <li className="navbar__item slideInDown-2">
+            <Link
+              onClick={handleShowLinks}
+              className="navbar__link"
+              to="/Search"
+            >
+              Trouver un acteur
+            </Link>
+          </li>
+          <li className="navbar__item slideInDown-3">
+            <Link onClick={handleShowLinks} className="navbar__link" to="/Info">
+              Qui sommes-nous?
+            </Link>
+          </li>
+          <li className="navbar__item slideInDown-4">
+            <Link
+              onClick={handleShowLinks}
+              className="navbar__link"
+              to="/Contact"
+            >
+              Nous contacter
+            </Link>
+          </li>
+        </ul>
+        <button
+          type="button"
+          className="navbar__burger"
+          onClick={handleShowLinks}
+        >
+          <span className="burger-bar" />
+        </button>
       </nav>
     </header>
   );
