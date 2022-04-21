@@ -1,5 +1,5 @@
-import '../Search.css';
-import SearchBar from "@components/SearchBar";
+import '../styles/Search.css';
+import SearchBar from "../components/SearchBar";
 
 const Search = () =>{
   return (

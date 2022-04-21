@@ -1,5 +1,5 @@
 import react from "react";
-import '../Search.css';
+import '../styles/Search.css';
 
   /*const SearchBar = ({categorie, setCategorie, setVille})=> {
     */

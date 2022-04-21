@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Search from "./pages/Search";
-import Info from "./pages/Info";
-import Contact from "./pages/Contact";
+import Home from "../pages/Home";
+import Search from "../pages/Search";
+import Info from "../pages/Info";
+import Contact from "../pages/Contact";
 
 function Content() {
   return (
