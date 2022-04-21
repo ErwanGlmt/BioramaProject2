@@ -33,7 +33,7 @@ const SearchBar = ()=> {
 
     return (
         <>
-            <div className='container'>
+            <div className='categorieContainer'>
                 <form>
                     <div className="selectCat">
                         <select name="categorie" id="categorie" required onChange={(e)=> handleChangeCat(e)} >

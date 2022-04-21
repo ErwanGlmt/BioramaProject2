@@ -1,5 +1,5 @@
 import react from "react";
-import '../styles/Search.css';
+import '../styles/Card.css';
 
 const Card = ({adressesOperateurs, categories, raisonSociale})=> {
     console.log("donnee = " + categories[0].nom);
@@ -14,7 +14,7 @@ const Card = ({adressesOperateurs, categories, raisonSociale})=> {
                 <address>
                     {adressesOperateurs[0].lieu }<br />
                     {adressesOperateurs[0].codePostal } - {adressesOperateurs[0].ville }<br /> 
-                 </address>
+                </address>
             </div>
         </div>
     );

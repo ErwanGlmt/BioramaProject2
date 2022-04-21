@@ -1,0 +1,31 @@
+
+div.div-card {
+    display : flex;
+    border-radius : 10px;
+    margin : 15px 0;
+    padding : 10px;
+    background-color: var(--btn-background);
+    column-gap : 15px;
+    cursor : pointer;
+    transition: ease-in-out .4s all;
+    /* opacity: .8; */
+}
+
+div.div-card:hover > div {
+    transform : scale(1.03);
+}
+
+div.div-card:hover {
+    opacity: 1;
+}
+
+.div-card div:first-child {
+    min-width: 30vw;
+    background-color: rgb(243, 235, 235);
+    border-radius: 20px;
+}
+
+.div-card div {
+    width: 90vw;
+    transition: ease-in-out .4s all;
+}
