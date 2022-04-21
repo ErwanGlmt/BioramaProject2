@@ -14,32 +14,32 @@ function Footer() {
         </div>
 
         <div className="col">
-          <h4>BIORAMA CORP.</h4>
+          <p>BIORAMA CORP.</p>
           <p>564 rue Baron</p>
           <p>44 000 NANTES, FRANCE</p>
           <p>+33 6.12.13.14.15</p>
         </div>
 
         <div className="col">
-          <h4>SUIVEZ-NOUS SUR NOS RESEAUX</h4>
+          <p>SUIVEZ-NOUS :</p>
 
           <img
-            src="https://img.icons8.com/color/48/000000/facebook-new.png"
+            src="https://img.icons8.com/color/27/000000/facebook-new.png"
             alt="Icone Facebook"
           />
           <img
-            src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+            src="https://img.icons8.com/color/27/000000/instagram-new--v1.png"
             alt="Icone Instagram"
           />
           <img
-            src="https://img.icons8.com/color/48/000000/youtube-play.png"
+            src="https://img.icons8.com/color/27/000000/youtube-play.png"
             alt="Icone YouTube"
           />
         </div>
       </div>
       <hr />
-      <div className="row">
-        <p className="col-small">
+      <div className="row1">
+        <p className="colSmall">
           &copy;{new Date().getFullYear()} BIORAMA CORP. | All rights reserved |
           Privacy
         </p>

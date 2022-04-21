@@ -1,23 +1,32 @@
 .main-footer {
-  background-color: pink;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
+  background-color: black;
+  height: 120px;
   color: white;
-}
+ }
 .footer_logo {
-  max-width: 15%;
-  max-height: 15%;
-  justify-content: flex-start;
+  max-width: 35%;
+  max-height: 35%;
 }
 
 .col {
   text-align: center;
+  width: 100%;
 }
 
+
 .row {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+   
 }
-h4 {
-  font-size: var(--h4-font-size);
+.row1 {
+text-align: center;
+margin-top: 8px;
+}
+
+p {
+  font-size: 10px;
+  margin-bottom: 5px;
 }

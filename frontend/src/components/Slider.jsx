@@ -33,8 +33,8 @@ function Slider() {
         <div key={slide.id}>
           <img src={slide.image} alt="" />
           <div className="overlay">
-            <h2 className="overlay__title">{slide.title}</h2>
-            <p className="overlay__text">{slide.text}</p>
+            <h2 className="overlayTitle">{slide.title}</h2>
+            <p className="overlayText">{slide.text}</p>
           </div>
         </div>
       ))}
