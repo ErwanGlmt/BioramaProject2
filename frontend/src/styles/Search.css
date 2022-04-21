@@ -1,0 +1,69 @@
+:root {
+    --btn-background : #00A878;
+}
+
+div.div-recherche {
+    width: 90vw;
+    margin : 0 auto;
+}
+
+form {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+div.selectCat, div.selectDept {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    width: 90vw;
+    padding : .5rem 0;
+}
+
+p {
+    margin-top : 1rem;
+}
+
+.container input[type='submit'] {
+    background-color: var(--btn-background);
+    border-radius: 10px;
+    font-size : 1.8rem;
+    padding : .4rem 0; 
+    margin-bottom: 35px;
+    border-style: none;
+}
+
+div.div-card {
+    display : flex;
+    border-radius : 10px;
+    margin : 15px 0;
+    padding : 10px;
+    background-color: var(--btn-background);
+    column-gap : 15px;
+    cursor : pointer;
+    transition: ease-in-out .4s;
+    /* opacity: .8; */
+}
+
+div.div-card:hover > div {
+    transform : scale(1.03);
+}
+
+div.div-card:hover {
+    opacity: 1;
+}
+
+.div-card div:first-child {
+    min-width: 30vw;
+    background-color: rgb(243, 235, 235);
+    border-radius: 20px;
+}
+
+.div-card div {
+    transition:  ease-in-out .4s;;
+}

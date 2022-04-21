@@ -1,11 +1,13 @@
-import React from "react";
+import '../styles/Search.css';
+import SearchBar from "../components/SearchBar";
 
-function Search() {
+const Search = () =>{
   return (
-    <div>
-      <h1>Search Page</h1>
+    <div className="div-recherche">
+      <h1>Recherche</h1>
+      <SearchBar />
     </div>
   );
-}
-
+};
+ 
 export default Search;
