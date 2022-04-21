@@ -47,7 +47,7 @@ div.div-card {
     column-gap : 15px;
     cursor : pointer;
     transition: ease-in-out .4s;
-    opacity: .8;
+    /* opacity: .8; */
 }
 
 div.div-card:hover > div {

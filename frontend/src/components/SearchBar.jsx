@@ -10,13 +10,11 @@ const SearchBar = ()=> {
   const [data, setData] = useState([]);
 
     const handleChangeCity = (event)=> {
-        setVille(event.target.value)
-        //console.log("ma ville == " + ville);
+        setVille(event.target.value);
     }
 
     const handleChangeCat = (event)=> {
-        setCategorie(event.target.value)
-        console.log("ma categorie == " + categorie);
+        setCategorie(event.target.value);
     }
 
     const getData = ()=> {
@@ -32,6 +30,7 @@ const SearchBar = ()=> {
     }, [])
 
     console.log(data)
+
     return (
         <>
             <div className='container'>

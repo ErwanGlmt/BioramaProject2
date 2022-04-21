@@ -1,9 +1,6 @@
 import react from "react";
 import '../styles/Search.css';
 
-  /*const SearchBar = ({categorie, setCategorie, setVille})=> {
-    */
-
 const Card = ({adressesOperateurs, categories, raisonSociale})=> {
     console.log("donnee = " + categories[0].nom);
     return (
