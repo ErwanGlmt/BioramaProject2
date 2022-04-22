@@ -1,19 +1,32 @@
-import react from "react";
+import React from "react";
 import '../styles/Card.css';
+import CardDescription from "../pages/CardDescription";
 
-const Card = ({adressesOperateurs, categories, raisonSociale})=> {
-    console.log("donnee = " + categories[0].nom);
+const dispayCard = ()=> {
+    //console.log('ok');
+}
+
+const Card = ({adressesOperateurs, categories, raisonSociale, productions, gerant})=> {
+
+    <CardDescription
+        adressesOperateurs={adressesOperateurs} 
+        categories={categories[0].nom}
+        raisonSociale={raisonSociale}
+        productions={productions}
+        gerant={gerant}
+    />
+
     return (
-        <div className="div-card">
+        <div className="div-card" onClick={dispayCard()}>
             <div>
                 <img src =" " alt = "image acteur" />
             </div>
             <div>
                 <h2>{raisonSociale}</h2>
-                <p>{categories[0].nom}  </p>
+                <p>{categories[0].nom}</p>
                 <address>
-                    {adressesOperateurs[0].lieu }<br />
-                    {adressesOperateurs[0].codePostal } - {adressesOperateurs[0].ville }<br /> 
+                    {adressesOperateurs[0].lieu}<br />
+                    {adressesOperateurs[0].codePostal} - {adressesOperateurs[0].ville}<br /> 
                 </address>
             </div>
         </div>

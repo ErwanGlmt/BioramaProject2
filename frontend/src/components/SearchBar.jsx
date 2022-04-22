@@ -50,12 +50,15 @@ const SearchBar = ()=> {
                 </form>
             </div>
             
-            {
+            {              
                 data.filter((donnees) => {
                     if(donnees.categories.length > 0 ) {
-                        if (categorie === "" ) return donnees.categories[0];
-                        if (ville !== "" ) return donnees.adressesOperateurs[0].ville == ville;
-                        else return donnees.categories[0].nom == categorie;
+                        if (categorie !== "" ) return donnees.categories[0].nom == categorie;
+                        if (ville !== "" ) {
+                            console.log(donnees.adressesOperateurs[0].ville);
+                            return donnees.adressesOperateurs[0].ville == ville;
+                        }
+                        else return donnees.categories[0];
                     }})
                     .map((cat, index) => {
                         return <Card {...cat} key={index} />

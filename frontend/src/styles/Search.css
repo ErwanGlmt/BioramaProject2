@@ -37,4 +37,5 @@ p {
     padding : .4rem 0; 
     margin-bottom: 35px;
     border-style: none;
+    cursor : pointer;
 }

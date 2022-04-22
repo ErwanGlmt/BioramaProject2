@@ -20,7 +20,7 @@ div.div-card:hover {
 }
 
 .div-card div:first-child {
-    min-width: 30vw;
+    width: 45vw;
     background-color: rgb(243, 235, 235);
     border-radius: 20px;
 }
