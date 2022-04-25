@@ -75,7 +75,14 @@ function SearchBar() {
           return false;
         })
         .map((cat) => {
-          return <Card {...cat} key={cat.id} />;
+          return (
+            <Card
+              adressesOperateurs={cat.adressesOperateurs}
+              categories={cat.categorie}
+              raisonSociale={cat.raisonSociale}
+              key={cat.id}
+            />
+          );
         })}
     </>
   );
