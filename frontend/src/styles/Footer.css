@@ -1,0 +1,33 @@
+.main-footer {
+  background-color: black;
+  height: 110px;
+  color: white;
+}
+.footer_logo {
+  max-width: 35%;
+  max-height: 35%;
+}
+
+.col {
+  text-align: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+}
+.row1 {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.col p {
+  font-size: 8px;
+  margin-bottom: 5px;
+}
+.colSmall {
+  font-size: 8px;
+}

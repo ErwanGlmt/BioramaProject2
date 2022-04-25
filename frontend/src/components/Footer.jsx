@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../styles/Footer.css";
 
 function Footer() {
   return (
@@ -24,15 +24,15 @@ function Footer() {
           <p>SUIVEZ-NOUS :</p>
 
           <img
-            src="https://img.icons8.com/color/27/000000/facebook-new.png"
+            src="https://img.icons8.com/color/20/000000/facebook-new.png"
             alt="Icone Facebook"
           />
           <img
-            src="https://img.icons8.com/color/27/000000/instagram-new--v1.png"
+            src="https://img.icons8.com/color/20/000000/instagram-new--v1.png"
             alt="Icone Instagram"
           />
           <img
-            src="https://img.icons8.com/color/27/000000/youtube-play.png"
+            src="https://img.icons8.com/color/20/000000/youtube-play.png"
             alt="Icone YouTube"
           />
         </div>
