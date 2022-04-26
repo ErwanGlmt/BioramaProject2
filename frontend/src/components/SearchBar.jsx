@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Search.css";
+import "../styles/Card.css";
 import axios from "axios";
 import Card from "./Card";
 
@@ -36,7 +36,6 @@ function SearchBar() {
             <select
               name="categorie"
               id="categorie"
-              required
               onChange={(e) => handleChangeCat(e)}
             >
               <option value="">-- Choisissez une catégorie --</option>
@@ -55,11 +54,9 @@ function SearchBar() {
             type="text"
             minLength="4"
             maxLength="16"
-            required
             placeholder="Ville de la recherche"
             onChange={(e) => handleChangeCity(e)}
           />
-          <input type="submit" value="Rechercher" />
         </form>
       </div>
 
@@ -77,9 +74,11 @@ function SearchBar() {
         .map((cat) => {
           return (
             <Card
-              adressesOperateurs={cat.adressesOperateurs}
               categories={cat.categorie}
               raisonSociale={cat.raisonSociale}
+              lieu={cat.adressesOperateurs[0].lieu}
+              codePostal={cat.adressesOperateurs[0].codePostal}
+              ville={cat.adressesOperateurs[0].ville}
               key={cat.id}
             />
           );

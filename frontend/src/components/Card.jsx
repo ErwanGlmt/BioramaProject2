@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Search.css";
+import "../styles/Card.css";
 import PropTypes from "prop-types";
 
-function Card({ adressesOperateurs, categories, raisonSociale }) {
+function Card({ lieu, ville, codePostal, categories, raisonSociale }) {
   return (
     <div className="div-card">
       <div>
@@ -12,9 +12,9 @@ function Card({ adressesOperateurs, categories, raisonSociale }) {
         <h2>{raisonSociale}</h2>
         <p>{categories[0].nom} </p>
         <address>
-          {adressesOperateurs[0].lieu}
+          {lieu}
           <br />
-          {adressesOperateurs[0].codePostal} - {adressesOperateurs[0].ville}
+          {codePostal} - {ville}
           <br />
         </address>
       </div>
@@ -22,24 +22,22 @@ function Card({ adressesOperateurs, categories, raisonSociale }) {
   );
 }
 
-Card.defaultProps = {
-  adressesOperateurs: "NoAddress",
-  categories: "NoCategorie",
-  raisonSociale: "NoRaisonSociale",
-  codePostal: "NoCode",
-  ville: "NoCity",
-  lieu: "NoLieu",
-  nom: "NoName",
-};
-
 Card.propTypes = {
-  adressesOperateurs: PropTypes.string,
+  lieu: PropTypes.string,
+  codePostal: PropTypes.string,
+  ville: PropTypes.string,
   categories: PropTypes.string,
   raisonSociale: PropTypes.string,
-  codePostal: PropTypes.number,
-  ville: PropTypes.string,
-  lieu: PropTypes.string,
   nom: PropTypes.string,
+};
+
+Card.defaultProps = {
+  lieu: "",
+  ville: "",
+  codePostal: "",
+  categories: "NoCategorie",
+  raisonSociale: "NoRaisonSociale",
+  nom: "NoName",
 };
 
 export default Card;

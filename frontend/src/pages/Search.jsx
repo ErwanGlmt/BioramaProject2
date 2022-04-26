@@ -1,4 +1,4 @@
-import "../styles/Search.css";
+import "../styles/Card.css";
 import SearchBar from "../components/SearchBar";
 
 function Search() {

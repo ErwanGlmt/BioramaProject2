@@ -4,8 +4,8 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <div className="main-footer">
-      <div className="row">
-        <div className="col">
+      <div className="div1">
+        <div className="div-logo">
           <img
             src="./src/components/biorama2.png"
             className="footer_logo"
@@ -13,14 +13,13 @@ function Footer() {
           />
         </div>
 
-        <div className="col">
-          <p>BIORAMA CORP.</p>
-          <p>564 rue Baron</p>
-          <p>44 000 NANTES, FRANCE</p>
-          <p>+33 6.12.13.14.15</p>
+        <div className="div-adresse">
+          <h2>BIORAMA CORP.</h2> 564 rue Baron <br />
+          44000 NANTES, FRANCE
+          <br /> +33 6.12.13.14.15
         </div>
 
-        <div className="col">
+        <div className="div-reseaux">
           <p>SUIVEZ-NOUS :</p>
 
           <img
@@ -37,7 +36,7 @@ function Footer() {
           />
         </div>
       </div>
-      <hr />
+
       <div className="row1">
         <p className="colSmall">
           &copy;{new Date().getFullYear()} BIORAMA CORP. | All rights reserved |
