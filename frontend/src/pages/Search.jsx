@@ -1,9 +1,11 @@
-import React from "react";
+import "../styles/Card.css";
+import SearchBar from "../components/SearchBar";
 
 function Search() {
   return (
-    <div>
-      <h1>Search Page</h1>
+    <div className="div-recherche">
+      <h1>Recherche</h1>
+      <SearchBar />
     </div>
   );
 }

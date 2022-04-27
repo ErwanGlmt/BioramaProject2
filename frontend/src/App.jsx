@@ -1,21 +1,16 @@
 import React from "react";
-// import axios from "axios";
-import Header from "./Header";
-import Content from "./Content";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 import "./App.css";
 
 function App() {
-  /* const getData = () => {
-    axios
-      .get("https://opendata.agencebio.org/api/gouv/operateurs/")
-      .then((response) => console.log(response));
-  };
-  getData(); */
   return (
     <div className="App">
       <Header />
       <Content />
+      <Footer />
     </div>
   );
 }
