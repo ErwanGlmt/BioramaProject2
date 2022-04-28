@@ -65,7 +65,10 @@ function SearchBar() {
           if (donnees.categories.length > 0) {
             if (categorie === "") return donnees.categories[0];
             if (ville !== "") {
-              return donnees.adressesOperateurs[0].ville === ville;
+              return (
+                donnees.adressesOperateurs[0].ville.toLowerCase() ===
+                ville.toLowerCase()
+              );
             }
             return donnees.categories[0].nom === categorie;
           }
@@ -74,7 +77,7 @@ function SearchBar() {
         .map((cat) => {
           return (
             <Card
-              categories={cat.categorie}
+              categories={cat.categories[0].nom}
               raisonSociale={cat.raisonSociale}
               lieu={cat.adressesOperateurs[0].lieu}
               codePostal={cat.adressesOperateurs[0].codePostal}

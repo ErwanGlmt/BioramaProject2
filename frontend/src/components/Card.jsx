@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 function Card({ lieu, ville, codePostal, categories, raisonSociale }) {
   return (
     <div className="div-card">
-      <div>
-        <img src=" " alt="" />
+      <div className="div-image">
+        <img src="./src/assets/slide3.jpg" alt="distributeur" />
       </div>
       <div>
         <h2>{raisonSociale}</h2>
-        <p>{categories[0].nom} </p>
+        <p>{categories}</p>
         <address>
           {lieu}
           <br />
@@ -28,7 +28,6 @@ Card.propTypes = {
   ville: PropTypes.string,
   categories: PropTypes.string,
   raisonSociale: PropTypes.string,
-  nom: PropTypes.string,
 };
 
 Card.defaultProps = {
@@ -37,7 +36,6 @@ Card.defaultProps = {
   codePostal: "",
   categories: "NoCategorie",
   raisonSociale: "NoRaisonSociale",
-  nom: "NoName",
 };
 
 export default Card;

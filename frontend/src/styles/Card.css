@@ -2,12 +2,16 @@
   --btn-background: #00a878;
 }
 
+div.container {
+  margin-top: 2rem;
+}
+
 div.div-recherche {
   width: 90vw;
   margin: 0 auto;
 }
 
-form {
+div.container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,14 +25,19 @@ div.selectDept {
   flex-direction: column;
 }
 
-input,
+div.container form input,
 select {
   width: 90vw;
   padding: 0.5rem 0;
 }
 
-p {
-  margin-top: 1rem;
+.div-card p {
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.div-card h2 {
+  font-size: 1.3rem;
 }
 
 .container input[type="submit"] {
@@ -48,24 +57,20 @@ div.div-card {
   background-color: var(--btn-background);
   column-gap: 15px;
   cursor: pointer;
-  transition: ease-in-out 0.4s;
-  /* opacity: .8; */
-}
-
-div.div-card:hover > div {
-  transform: scale(1.03);
-}
-
-div.div-card:hover {
-  opacity: 1;
 }
 
 .div-card div:first-child {
-  min-width: 30vw;
   background-color: rgb(243, 235, 235);
   border-radius: 20px;
+  max-width: 35vw;
 }
 
 .div-card div {
   transition: ease-in-out 0.4s;
+}
+
+.div-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
