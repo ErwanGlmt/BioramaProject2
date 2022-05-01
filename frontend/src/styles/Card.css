@@ -36,7 +36,7 @@ div.selectDept {
 div.container-cat form input, 
 div.container-cat form select {
   width: 90vw; 
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.6rem;
   border-radius : 1rem;
 }
 
