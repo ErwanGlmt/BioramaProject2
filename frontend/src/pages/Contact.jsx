@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import "../styles/Contact.css";
 
 function Contact() {
+  const [message, setMessage] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -47,7 +49,15 @@ function Contact() {
             rows="10"
             required
           />
-          <input className="submit" type="submit" value="Envoyer" />
+          <input
+            onClick={() => setMessage(!message)}
+            className="submit"
+            type="submit"
+            value="Envoyer"
+          />
+          {message && (
+            <p className="message">Nous avons bien reçu votre message</p>
+          )}
         </form>
       </div>
     </div>

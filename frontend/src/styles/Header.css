@@ -9,15 +9,12 @@
   padding: 1rem;
   background-color: var(--main-color);
   color: var(--second-color);
-  
 }
 
 .navbarLinks {
   display: flex;
   gap: 10px;
-
 }
-
 
 .navbarLink {
   padding: 0 0.5rem;
@@ -40,12 +37,12 @@
 }
 
 li a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 nav a.navbarLink.active {
   font-weight: bold;
-  color: red
+  color: red;
 }
 
 @media screen and (max-width: 767px) {
@@ -171,6 +168,6 @@ nav a.navbarLink.active {
   }
 
   li a {
-    text-decoration: none
+    text-decoration: none;
   }
 }
