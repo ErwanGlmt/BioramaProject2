@@ -30,8 +30,9 @@ function SearchBar() {
 
   return (
     <>
-      <div className="container">
+      <div className="container-cat">
         <form>
+          <h2>Rechercher</h2>
           <div className="selectCat">
             <select
               name="categorie"
@@ -49,7 +50,6 @@ function SearchBar() {
               </option>
             </select>
           </div>
-
           <input
             type="text"
             minLength="4"
