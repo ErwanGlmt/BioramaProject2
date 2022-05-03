@@ -3,6 +3,7 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
+  height: 120px;
 }
 
 div.div1 {
@@ -15,32 +16,63 @@ div.div1 {
 
 .div-adresse {
   font-size: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .div-adresse h2 {
-  margin-bottom: 12px;
-  font-size: 12px;
+  margin-bottom: 5px;
+  font-size: 10px;
 }
 .main-footer div.row1 {
   min-width: 100%;
 }
 
 .div-logo img {
-  max-width: 22vw;
-  max-height: 22vh;
+  max-width: 13vw;
+  max-height: 13vh;
 }
 
 .row1 {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 
 .main-footer p {
-  font-size: 8px;
   margin-bottom: 5px;
+}
+.div-reseaux p {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.div-reseaux img {
+  width: px;
+  height: 20px;
 }
 .colSmall {
   font-size: 8px;
   border-top: 1px solid white;
-  padding-top: 12px;
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 767px) {
+  .div-adresse {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .div-adresse h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .main-footer {
+    height: 180px;
+  }
+  .main-footer p {
+    font-size: 10px;
+  }
+  .div-reseaux p {
+    font-size: 15px;
+  }
+  .div-reseaux img {
+    width: 40px;
+    height: 40px;
+  }
 }
