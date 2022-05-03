@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   .contactTitle {
-    margin-top: 7rem;
+    margin-top: 9rem;
   }
 
   .title {
@@ -31,7 +31,7 @@
   }
   .form {
     background-color: var(--second-color);
-    height: 55vh;
+    height: 60vh;
     margin-left: 400px;
     margin-right: 400px;
     border-radius: 15px;
@@ -71,9 +71,21 @@
     font-size: 1.5rem;
     margin-top: 1rem;
   }
+
+  .message {
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+    color: white;
+    height: 5vh;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .contactTitle {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
   .title {
     padding-top: 5rem;
     font-size: var(--h2-font-size);
@@ -101,7 +113,7 @@
 
   .form {
     background-color: var(--second-color);
-    height: 60vh;
+    height: 63vh;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 15px;
@@ -142,4 +154,12 @@
     background-color: black;
     font-size: 1.5rem;
   }
+
+  .message {
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+    color: white;
+    height: 5vh;
+  }
+
 }
