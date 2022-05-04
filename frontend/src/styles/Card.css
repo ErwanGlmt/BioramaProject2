@@ -8,7 +8,7 @@
 
 div.container-cat {
   padding-top: 6.5rem;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
 div.div-recherche {
@@ -33,11 +33,11 @@ div.selectDept {
   flex-direction: column;
 }
 
-div.container-cat form input, 
+div.container-cat form input,
 div.container-cat form select {
-  width: 90vw; 
+  width: 90vw;
   padding: 0.5rem 0.6rem;
-  border-radius : 1rem;
+  border-radius: 1rem;
 }
 
 .div-card p {
@@ -86,9 +86,9 @@ div.div-card {
 @media screen and (min-width: 767px) {
   div.div-recherche {
     flex-direction: row;
-    column-gap : 2rem;
+    column-gap: 2rem;
     flex-wrap: wrap;
-    margin : 0 auto;
+    margin: 0 auto;
   }
 
   div.div-card {
@@ -99,7 +99,7 @@ div.div-card {
   div.container-cat {
     display: flex;
     width: 75%;
-    margin : 2.6rem auto 1.3rem;
+    margin: 2.6rem auto 1.3rem;
     justify-content: center;
   }
 
