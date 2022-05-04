@@ -17,7 +17,7 @@
 }
 
 .navbarLink {
-  padding: 0 0.3rem;
+  padding: 0 0.5rem;
   color: inherit;
   font-size: 1.2rem;
   margin-left: 2px;
@@ -34,6 +34,15 @@
 
 .logo {
   width: 6rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+nav a.navbarLink.active {
+  font-size: 1.5rem;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -97,7 +106,7 @@
     position: relative;
     border-radius: 3px;
     background: var(--second-color);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   .burgerBar::before,
@@ -156,5 +165,9 @@
     width: 4rem;
     z-index: 1;
     position: relative;
+  }
+
+  li a {
+    text-decoration: none;
   }
 }
