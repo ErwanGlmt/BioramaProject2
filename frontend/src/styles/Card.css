@@ -7,7 +7,7 @@
 }
 
 div.container-cat {
-  padding-top: 6.5rem;
+  padding-top: 1.5rem;
   margin: 0 auto;
 }
 
@@ -43,6 +43,10 @@ div.container-cat form select {
 .div-card p {
   font-weight: bold;
   padding: 1rem 0;
+}
+
+.container-cat h2 {
+  font-size: 2.3rem;
 }
 
 .div-card h2 {

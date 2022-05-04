@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import "../styles/Header.css";
 
@@ -9,36 +9,47 @@ function Header() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
+
   return (
     <header>
       <nav className={`navbar ${showLinks ? "showNav" : null}`}>
         <div className="navbarLogo">
-          <img className="logo" src="./src/assets/biorama2.png" alt="logo" />
+          <NavLink to="/">
+            <img className="logo" src="./src/assets/biorama2.png" alt="logo" />
+          </NavLink>
         </div>
         <ul className="navbarLinks">
           <li className="navbarItem slideInDown-1">
-            <Link onClick={handleShowLinks} className="navbarLink" to="/">
+            <NavLink onClick={handleShowLinks} className="navbarLink" to="/">
               Accueil
-            </Link>
+            </NavLink>
           </li>
           <li className="navbarItem slideInDown-2">
-            <Link onClick={handleShowLinks} className="navbarLink" to="/Search">
+            <NavLink
+              onClick={handleShowLinks}
+              className="navbarLink"
+              to="/Search"
+            >
               Trouver un acteur
-            </Link>
+            </NavLink>
           </li>
           <li className="navbarItem slideInDown-3">
-            <Link onClick={handleShowLinks} className="navbarLink" to="/Info">
+            <NavLink
+              onClick={handleShowLinks}
+              className="navbarLink"
+              to="/Info"
+            >
               Qui sommes-nous?
-            </Link>
+            </NavLink>
           </li>
           <li className="navbarItem slideInDown-4">
-            <Link
+            <NavLink
               onClick={handleShowLinks}
               className="navbarLink"
               to="/Contact"
             >
               Nous contacter
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <button
