@@ -1,4 +1,4 @@
-h1 {
+.presentation-text h1 {
   color: var(--main-color);
   padding: 20px;
 }
@@ -7,4 +7,76 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+}
+.photoequipe {
+  height: 800px;
+  width: 1000px;
+  border-radius: 10%;
+}
+
+#prestextmobile {
+  display: flex;
+  border-radius: 20px;
+  background-color: var(--second-color);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-weight: bolder;
+  width: 75%;
+  height: 47vh;
+  margin: 0.8rem;
+  padding: 20px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .presentation-text h1 {
+    margin-top: 5.5rem;
+  }
+  .photoequipe {
+    display: none;
+  }
+  .membreequipe {
+    display: none;
+  }
+  #prestextdesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .presentation-text h1 {
+    margin-top: 8rem;
+  }
+  .membreequipe {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+  .membreequipe p {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  #prestextdesktop {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-weight: bolder;
+    height: 25vh;
+    padding: 20px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #prestextmobile {
+    display: none;
+  }
+
+  .photopresentation {
+    padding: 2rem;
+  }
 }

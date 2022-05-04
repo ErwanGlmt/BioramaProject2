@@ -1,0 +1,165 @@
+@media screen and (min-width: 768px) {
+  .contactTitle {
+    margin-top: 9rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: var(--h2-font-size);
+  }
+
+  .paragraph {
+    margin-top: 1rem;
+    height: 10rem;
+    border-bottom: 0.1rem solid var(--second-color);
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+
+  .pContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-weight: bolder;
+    text-align: center;
+    height: 15vh;
+  }
+  .form {
+    background-color: var(--second-color);
+    height: 60vh;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  form {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputContact {
+    border-radius: 30px;
+    width: 50%;
+    margin-top: 1rem;
+    height: 2rem;
+  }
+
+  .inputContact::placeholder {
+    text-align: center;
+  }
+
+  textarea {
+    margin-top: 1rem;
+    width: 80%;
+    resize: none;
+  }
+
+  .submit {
+    width: 20%;
+    height: 4vh;
+    box-sizing: content-box;
+    border-radius: 0;
+    color: var(--second-color);
+    background-color: black;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .message {
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+    color: white;
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactTitle {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+  .title {
+    padding-top: 5rem;
+    font-size: var(--h2-font-size);
+  }
+
+  .paragraph {
+    margin-top: 1rem;
+    height: 10rem;
+    border-bottom: 0.1rem solid var(--second-color);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .pContact {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-weight: bolder;
+    height: 15vh;
+  }
+
+  .form {
+    background-color: var(--second-color);
+    height: 63vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+
+  .form form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputContact {
+    width: 80%;
+    margin-top: 1rem;
+    border-radius: 30px;
+    height: 2rem;
+  }
+
+  .inputContact::placeholder {
+    text-align: center;
+  }
+
+  textarea {
+    margin-top: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .submit {
+    width: 30%;
+    height: 5vh;
+    box-sizing: content-box;
+    border-radius: 0;
+    color: var(--second-color);
+    background-color: black;
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+    color: white;
+    height: 5vh;
+  }
+
+}
