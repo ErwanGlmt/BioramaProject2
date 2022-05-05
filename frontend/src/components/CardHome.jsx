@@ -11,21 +11,23 @@ function CardHome({
   dateArret,
 }) {
   return (
-    <div className="cardHome">
-      <div className="cardHome-image">
-        <img src="./src/assets/jake.jpg" alt="acteur" />
-      </div>
-      <div>
-        <h2>
-          {raisonSociale} - {dateArret}
-        </h2>
-        <p>{categories}</p>
-        <address>
-          {lieu}
-          <br />
-          {codePostal} - {ville}
-          <br />
-        </address>
+    <div className="cardHomeContainer">
+      <div className="cardHome">
+        <div className="cardHome-image">
+          <img src="./src/assets/jake.jpg" alt="acteur" />
+        </div>
+        <div>
+          <h2>
+            {raisonSociale} - {dateArret}
+          </h2>
+          <p>{categories}</p>
+          <address>
+            {lieu}
+            <br />
+            {codePostal} - {ville}
+            <br />
+          </address>
+        </div>
       </div>
     </div>
   );

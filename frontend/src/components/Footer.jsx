@@ -6,11 +6,7 @@ function Footer() {
     <div className="main-footer">
       <div className="div1">
         <div className="div-logo">
-          <img
-            src="./src/components/biorama2.png"
-            className="footer_logo"
-            alt=""
-          />
+          <img src="./src/assets/biorama2.png" className="footer_logo" alt="" />
         </div>
 
         <div className="div-adresse">
