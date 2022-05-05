@@ -111,7 +111,7 @@ div.div-card-details p {
   background-color: white;
   color: var(--btn-background);
   border-radius: 0.8rem;
-  padding: 0.3rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .div-image img {
