@@ -9,6 +9,7 @@
   left: 0;
   animation: 20s slider infinite;
   z-index: -1;
+  margin-top: 2rem;
 }
 .slider figure img {
   width: 20%;
