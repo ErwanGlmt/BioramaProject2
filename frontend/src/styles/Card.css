@@ -65,7 +65,7 @@ div.div-card {
   padding: 0.6rem;
   background-color: var(--btn-background);
   column-gap: 1rem;
-  height: 15rem;
+  height: 13rem;
   box-shadow: 0.2rem 0.2rem 0.6rem gray;
   width: 90%;
 }
