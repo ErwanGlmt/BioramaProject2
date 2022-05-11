@@ -44,12 +44,12 @@ CardHome.propTypes = {
 };
 
 CardHome.defaultProps = {
-  lieu: "",
-  ville: "",
-  codePostal: "",
-  categories: "NoCategorie",
-  raisonSociale: "NoRaisonSociale",
-  dateArret: "",
+  lieu: "63 impasse de la fruitière",
+  ville: "DOMANCY",
+  codePostal: "74700",
+  categories: "Producteur",
+  raisonSociale: "La belle verte",
+  dateArret: "2020-09-15",
 };
 
 export default CardHome;

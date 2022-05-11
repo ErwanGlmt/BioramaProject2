@@ -2,6 +2,8 @@
   margin-top: 10px;
   text-align: center;
   color: #2f4f4f;
+  display: flex;
+  justify-content: center;
 }
 
 .homePage h1 {
@@ -12,8 +14,19 @@
   font-size: 1rem;
 }
 
+.homePage h3 {
+  font-size: 1rem;
+}
 .homePage p {
   font-size: 0.9rem;
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 75vh;
 }
 
 @media screen and (min-width: 768px) {
