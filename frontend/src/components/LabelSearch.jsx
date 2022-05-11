@@ -21,16 +21,11 @@ function LabelSearch() {
   return (
     <>
       {data
-        .filter((donnees) => {
-          if (donnees.categories.length > 0) {
-            return donnees.certificats[0].dateArret;
-          }
-          return false;
-        })
+        .filter((donnees) => donnees.certificats[0].dateArret != null)
         .map((cat) => {
           return (
             <CardHome
-              categories={cat.categories[0].nom}
+              categories={cat.categories.nom}
               dateArret={cat.certificats[0].dateArret}
               raisonSociale={cat.raisonSociale}
               lieu={cat.adressesOperateurs[0].lieu}

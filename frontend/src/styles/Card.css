@@ -11,7 +11,7 @@ div.container-cat {
 }
 
 div.div-recherche {
-  padding-top : 100px;
+  padding-top: 100px;
   display: flex;
   width: 95vw;
   flex-direction: column;
@@ -145,8 +145,8 @@ div.div-card-details li {
   height: 50px;
   width: 100px;
   font-size: 1.5rem;
-  cursor : pointer; 
-  transition : 0.4s ease-in-out all;
+  cursor: pointer;
+  transition: 0.4s ease-in-out all;
 }
 
 .detailspace {
@@ -162,7 +162,7 @@ div.div-card-details li {
   }
 
   #returnbutton:hover {
-    color : white;
+    color: white;
   }
 
   div.div-card {
@@ -194,7 +194,6 @@ div.div-card-details li {
     height: 11.9rem;
   }
 
-
   div.div-card-details {
     display: flex;
     border-radius: 0.6rem;
@@ -221,5 +220,3 @@ div.div-card-details li {
     font-size: 1.2rem;
   }
 }
-
-

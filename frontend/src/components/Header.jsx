@@ -40,7 +40,7 @@ function Header() {
               className="navbarLink"
               to="/Info"
             >
-              Qui sommes-nous?
+              Qui sommes-nous ?
             </NavLink>
           </li>
           <li className="navbarItem slideInDown-4">

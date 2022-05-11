@@ -1,0 +1,31 @@
+.homePage {
+  margin-top: 10px;
+  text-align: center;
+  color: #2f4f4f;
+}
+
+.homePage h1 {
+  font-size: 1.2rem;
+}
+
+.homePage h2 {
+  font-size: 1rem;
+}
+
+.homePage p {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .homePage h1 {
+    font-size: 2rem;
+  }
+
+  .homePage h2 {
+    font-size: 1.4rem;
+  }
+
+  .homePage p {
+    font-size: 1.2rem;
+  }
+}
