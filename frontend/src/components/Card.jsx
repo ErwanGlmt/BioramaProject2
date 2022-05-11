@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Card.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import slide3 from "../assets/slide3.jpg";
 
 function Card({
@@ -53,13 +54,15 @@ function Card({
           {codePostal} - {ville}
           <br />
         </address>
-        <button
-          type="button"
-          value={cardId}
-          onClick={(e) => setCardId(Number(e.target.value))}
-        >
-          Plus de détails ...
-        </button>
+        <Link to={`/Search/${cardId}`}>
+          <button
+            type="button"
+            value={cardId}
+            onClick={(e) => setCardId(Number(e.target.value))}
+          >
+            Plus de détails ...
+          </button>
+        </Link>
       </div>
     </div>
   );

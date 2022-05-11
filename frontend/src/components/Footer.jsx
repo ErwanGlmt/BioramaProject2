@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/Footer.css";
+import biorama2 from "../assets/biorama2.png";
 
 function Footer() {
   return (
     <div className="main-footer">
       <div className="div1">
         <div className="div-logo">
-          <img src="./src/assets/biorama2.png" className="footer_logo" alt="" />
+          <img src={biorama2} className="footer_logo" alt="" />
         </div>
 
         <div className="div-adresse">
