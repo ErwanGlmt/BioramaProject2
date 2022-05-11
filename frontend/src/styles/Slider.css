@@ -10,7 +10,7 @@
   margin-top: 5rem;
   animation: 20s slider infinite;
   z-index: -1;
- }
+}
 .slider figure img {
   width: 20%;
   float: left;
