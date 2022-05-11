@@ -1,6 +1,7 @@
 import "../styles/Card.css";
 import { useParams, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import slide3 from "../assets/slide3.jpg";
 
 export default function CardDetail() {
   const [details, setDetails] = useState();
@@ -23,11 +24,13 @@ export default function CardDetail() {
   return (
     <>
       <div className="detailspace" />
-
       <div className="detailparent">
+        <h1 className="titre-info-producteur">
+          Informations détaillées du producteur :
+        </h1>
         <div className="div-card-details div-card div-detail">
           <div className="div-image">
-            <img src="../src/assets/slide3.jpg" alt="distributeur" />
+            <img src={slide3} alt="distributeur" />
           </div>
           <div>
             <h2>{details?.raisonSociale}</h2>
