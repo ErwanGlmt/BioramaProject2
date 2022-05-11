@@ -7,9 +7,10 @@
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 16s slider infinite;
+  margin-top: 2rem;
+  animation: 20s slider infinite;
   z-index: -1;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .slider figure img {
   width: 20%;
