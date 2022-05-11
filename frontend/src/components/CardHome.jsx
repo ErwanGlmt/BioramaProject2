@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/CardHome.css";
 import PropTypes from "prop-types";
+import jake from "../assets/jake.jpg";
 
 function CardHome({
   lieu,
@@ -14,7 +15,7 @@ function CardHome({
     <div className="cardHomeContainer">
       <div className="cardHome">
         <div className="cardHome-image">
-          <img src="./src/assets/jake.jpg" alt="acteur" />
+          <img src={jake} alt="acteur" />
         </div>
         <div>
           <h2>
