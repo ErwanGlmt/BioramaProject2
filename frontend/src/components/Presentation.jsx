@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Presentation.css";
+import photoequipe from "../assets/photoequipe.jpg";
 
 function Presentation() {
   return (
@@ -28,11 +29,7 @@ function Presentation() {
         et de l&apos;utilité.
       </p>
       <div className="photopresentation">
-        <img
-          src="./src/assets/photoequipe.jpg"
-          className="photoequipe"
-          alt="Notre team"
-        />
+        <img src={photoequipe} className="photoequipe" alt="Notre team" />
         <div className="membreequipe">
           <p>Séverine</p>
           <p>Lamarre</p>

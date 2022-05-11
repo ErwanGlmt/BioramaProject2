@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Card.css";
 import PropTypes from "prop-types";
+import slide3 from "../assets/slide3.jpg";
 
 function Card({
   lieu,
@@ -41,7 +42,7 @@ function Card({
   ) : (
     <div className="div-card">
       <div className="div-image">
-        <img src="./src/assets/slide3.jpg" alt="distributeur" />
+        <img src={slide3} alt="distributeur" />
       </div>
       <div>
         <h2>{raisonSociale}</h2>
