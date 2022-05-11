@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Card.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function Card({
   lieu,
@@ -52,13 +53,15 @@ function Card({
           {codePostal} - {ville}
           <br />
         </address>
-        <button
-          type="button"
-          value={cardId}
-          onClick={(e) => setCardId(Number(e.target.value))}
-        >
-          Plus de détails ...
-        </button>
+        <Link to={`/Search/${cardId}`}>
+          <button
+            type="button"
+            value={cardId}
+            onClick={(e) => setCardId(Number(e.target.value))}
+          >
+            Plus de détails ...
+          </button>
+        </Link>
       </div>
     </div>
   );

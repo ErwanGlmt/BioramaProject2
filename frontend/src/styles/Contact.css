@@ -49,12 +49,11 @@
     width: 50%;
     margin-top: 1rem;
     height: 2rem;
-   
   }
 
-form input {
-  padding-left: 0.5rem;
-}
+  form input {
+    padding-left: 0.5rem;
+  }
 
   .inputContact::placeholder {
     text-align: center;
