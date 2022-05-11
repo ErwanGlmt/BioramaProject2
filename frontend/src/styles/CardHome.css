@@ -8,12 +8,14 @@
 }
 
 .cardHome h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+
 .cardHomeContainer {
   display: flex;
   justify-content: center;
 }
+
 .cardHome {
   display: flex;
   border-radius: 0.6rem;
@@ -26,13 +28,36 @@
 }
 
 .cardHome div:first-child {
-  max-width: 20vw;
+  max-width: 30vw;
 }
 
 .cardHome-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 80% 60%;
+  object-position: 80% 70%;
   border-radius: 1rem;
+}
+
+.cardHome address {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 767px) {
+  .cardHome div:first-child {
+    max-width: 30vw;
+  }
+  .cardHome-image img {
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    object-position: 100% 40%;
+    border-radius: 1rem;
+  }
+  .cardHome address {
+    font-size: 1rem;
+  }
+  .cardHome h2 {
+    font-size: 1.2rem;
+  }
 }
