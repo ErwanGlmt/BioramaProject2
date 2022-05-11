@@ -15,9 +15,9 @@ function Contact() {
       </div>
       <div className="paragraph">
         <p className="pContact">
-          Si vous avez une demande particulière ou voulez souhaitez etre
-          référencé sur notre site, voici un petit formulaire pour nous joindre.
-          Nous vous répondrons dans les plus brefs délais.
+          Si vous avez une demande particulière ou si vous souhaitez être
+          référencés sur notre site, voici un formulaire pour nous joindre. Nous
+          vous répondrons dans les plus brefs délais.
         </p>
       </div>
       <div className="form">
